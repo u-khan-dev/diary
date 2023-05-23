@@ -11,7 +11,7 @@ const DiaryPost = () => {
 
     useEffect(() => {
         const fetchPost = async () => {
-            const response = await fetch(`http://localhost:4000/api/posts/${id}`, {
+            const response = await fetch(`https://diary-api-nbqk.onrender.com/api/posts/${id}`, {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }
